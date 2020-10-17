@@ -16,5 +16,6 @@ zuul:
       path: /dept/*
       url: http://localhost:7001
     user: 
+      #实例服务方式配置路由
       path: /user/*
-      serviceId: provider-user
+      serviceId: PROVIDER-USER
