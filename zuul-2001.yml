@@ -10,6 +10,9 @@ zuul:
     socket-timeout-millis: 1000 #设置socket超时时间
     max-total-connections: 200 #设置整个网关最大的连接数
     max-per-route-connections: 20 #设置网关每个路由最大连接数
+  ribbon-isolation-strategy: semaphore
+  semaphore:
+    max-semaphores: 100
   routes:
     dept:
       #url方式配置路由
