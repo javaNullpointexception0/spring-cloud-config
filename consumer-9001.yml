@@ -1,0 +1,10 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: consumer
+
+#为feign开启断路器功能
+feign:
+  hystrix:
+    enabled: true
