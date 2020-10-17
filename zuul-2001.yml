@@ -19,3 +19,5 @@ zuul:
       #服务实例方式配置路由
       path: /user/**
       serviceId: provider-user
+logging:
+  level: debug
