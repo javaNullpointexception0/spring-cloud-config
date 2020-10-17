@@ -1,5 +1,5 @@
 server:
-  port: 3001
+  port: 2001
 
 spring:
   application:
@@ -19,5 +19,3 @@ zuul:
       #服务实例方式配置路由
       path: /user/**
       serviceId: provider-user
-logging:
-  level: debug
