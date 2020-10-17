@@ -15,6 +15,10 @@ zuul:
       #url方式配置路由
       path: /dept/**
       url: http://localhost:8001
+    user:
+      #服务实例方式配置路由
+      path: /user/**
+      serviceId: provider-user
 management:
   endpoints:
     web:
