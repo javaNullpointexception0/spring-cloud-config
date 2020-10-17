@@ -13,9 +13,9 @@ zuul:
   routes:
     dept:
       #url方式配置路由
-      path: /dept/*
-      url: http://localhost:7001
-    user: 
-      #实例服务方式配置路由
-      path: /user/*
-      serviceId: PROVIDER-USER
+      path: /dept/**
+      url: http://localhost:8001
+    user:
+      #服务实例方式配置路由
+      path: /user/**
+      serviceId: provider-user
