@@ -14,13 +14,13 @@ zuul:
   semaphore:
     max-semaphores: 100
   routes:
-    dept:
+    dept1:
       #url方式配置路由
-      path: /dept/**
+      path: /dept-api/**
       url: http://localhost:8001
     user:
       #服务实例方式配置路由
-      path: /user/**
+      path: /user-api/**
       serviceId: provider-user
 management:
   endpoints:
