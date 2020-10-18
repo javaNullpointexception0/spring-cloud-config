@@ -7,7 +7,11 @@ spring:
   #分布式链路追踪，服务会向zipkin的base-url发送服务运行信息
   zipkin:
     base-url: http://localhost:9411/
-    
+  sleuth:
+    sampler:
+      #采样比例，10即10%，100即所有请求都采样
+      rate: 100
+      
 zuul:
   host:
     connect-timeout-millis: 2000 #设置连接超时时间
