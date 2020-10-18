@@ -11,7 +11,10 @@ spring:
     #password: {cipher}7e2ba34842bade307ef3aa21b383f6c2bd18703cb4e8383ee9090dd773e4a965
     password: mysqlAdmin
     driver-class-name: com.mysql.jdbc.Driver
-
+  #分布式链路追踪，服务会向zipkin的base-url发送服务运行信息
+  zipkin:
+    base-url: http://localhost:9411/
+    
 eureka:
   #client:
     #service-url:
@@ -25,8 +28,3 @@ mybatis:
   mapper-locations:
     - classpath:mybatis/mapper/**/*.xml  #指定mapper.xml文件所在路径
   config-location: classpath:mybatis/mybatis.cfg.xml  #指定mybatis全局配置文件所在路径
-  
-#分布式链路追踪，服务会向zipkin的base-url发送服务运行信息
-spring:
-  zipkin:
-    base-url: http://localhost:9411/
