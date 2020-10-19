@@ -17,7 +17,7 @@ spring:
   sleuth:
     sampler:
       #采样比例，10即10%，100即所有请求都采样
-      rate: 100
+      rate: 90
       
 management:
   endpoints:
