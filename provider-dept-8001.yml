@@ -11,7 +11,7 @@ spring:
     #password: '{cipher}7e2ba34842bade307ef3aa21b383f6c2bd18703cb4e8383ee9090dd773e4a965'
     #password: mysqlAdmin
     #通过mycat连接数据库
-    url: jdbc:mysql://192.168.6.128:8806/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.6.128:8066/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
