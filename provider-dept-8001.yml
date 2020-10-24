@@ -5,11 +5,15 @@ spring:
   application:
     name: provider-dept
   datasource:
-    url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
-    username: root
+    #url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    #username: root
     #以{cipher}开头，spring cloud config会把面的内容进行解密
     #password: '{cipher}7e2ba34842bade307ef3aa21b383f6c2bd18703cb4e8383ee9090dd773e4a965'
-    password: mysqlAdmin
+    #password: mysqlAdmin
+    #通过mycat连接数据库
+    url: jdbc:mysql://localhost:8806/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
   #分布式链路追踪，服务会向zipkin的base-url发送服务运行信息
   zipkin:
